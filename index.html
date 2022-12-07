@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiket App</title>
+    <link rel="stylesheet" href="movie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="colors">
+            <div class="red sq"></div>
+            <div class="blue sq"></div>
+            <div class="green sq"></div>
+            <div class="black sq"></div>
+        </div>
+
+        <div class="opt">
+            <div class="add" onclick="document.getElementById('apnamodal').style.visibility = 'visible';"><i class="fa-sharp fa-solid fa-plus"></i></div>
+            <div class="delete" onclick="deleteit()"><i class="fa-solid fa-trash"></i></div>
+        </div>
+    </div>
+    <div class="appmodal" id="apnamodal">
+        <div class="modal">
+            <div class="box"><textarea name="txt1" id="txt1" cols="30" rows="10" placeholder="click color to submit"></textarea></div>
+            <div class="clr">
+                <div class="red sq" onclick="submit('red')"></div>
+                <div class="blue sq" onclick="submit('blue')"></div>
+                <div class="green sq" onclick="submit('green')"></div>
+                <div class="black sq" onclick="submit('black')"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="notes" id="notes">
+
+    </div>
+
+    <script src="movie.js"></script>
+
+
+
+</body>
+
+</html>
